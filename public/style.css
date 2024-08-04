@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Style the container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for each message */
+.container > div {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Style for user name */
+.container h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #007bff;
+}
+
+/* Style for message text */
+.container p {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #555;
+}
+
+/* Last paragraph (date added) styling */
+.container p:last-of-type {
+    font-size: 0.875em;
+    color: #999;
+}

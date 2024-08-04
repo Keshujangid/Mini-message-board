@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <% messages.forEach((element, index)=> {%>
+            <div>
+                <h2>
+                    <%= element.user %>
+                </h2>
+                <p>
+                    <%= element.text %>
+                </p>
+                <p>
+                    <%= element.added %>
+                </p>
+                <div class="full-message"><a href="/message/<%= index %>">see message</a></div>
+            </div>
+            <% })%>
+
+            <div class="new-message"><a href="/new">Add Message</a></div>
+    </div>
+</body>
+
+</html>
