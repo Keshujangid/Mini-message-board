@@ -10,18 +10,18 @@
 
 <body>
     <div class="container">
-        <% messages.forEach((element, index)=> {%>
+        <% messages.forEach((element)=> {%>
             <div>
                 <h2>
-                    <%= element.user %>
+                    <%= element.username %>
                 </h2>
                 <p>
-                    <%= element.text %>
+                    <%= element.message %>
                 </p>
                 <p>
                     <%= element.added %>
                 </p>
-                <div class="full-message"><a href="/message/<%= index %>">see message</a></div>
+                <div class="full-message"><a href="/message/<%= element.id %>">see message</a></div>
             </div>
             <% })%>
 
